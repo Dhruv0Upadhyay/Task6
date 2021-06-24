@@ -1,8 +1,8 @@
 Model trained sucessefully
 Step 3 - Run Our Facial Recognition
 cap.release()
-sender_email = "ds87702@gmail.com"
-receiver_email = "psuedorich02@gmail.com"
+sender_email = "sender's email"
+receiver_email = "reciever email"
 ​
 def send_email():
     subject = "Security Alet!! Theft Detected..."
@@ -56,7 +56,7 @@ def send_email():
 def whatsapp():
     t = datetime.datetime.now()
     try:
-        pywhatkit.sendwhatmsg('+917668811054', 'This message has been sent as we have found the users face in front of our camera. Check your email for the picture of the user', t.hour, t.minute+1)
+        pywhatkit.sendwhatmsg('Whatapp active number with country code', 'This message has been sent as we have found the users face in front of our camera. Check your email for the picture of the user', t.hour, t.minute+1)
         return("Sent")
     except:
         print("An Unexpected Error Occured!!!")
